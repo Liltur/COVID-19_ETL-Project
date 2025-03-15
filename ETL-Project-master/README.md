@@ -3,7 +3,7 @@ By Sanjoy Biswas
 
 ## Project Proposal
 Based upon the data compiled by John Hopkins University, I want to explore ''' Insert reasons here'''
-This will be done by extracting the CSV data and migrating it to a PostgreSQL Database.  
+This will be done by extracting the CSV data and migrating it to a MySQL Database.  
 
 ## Project Description
 I found data from `data.data.org` that had been compiled from John Hopkins University.  I filtered the data for March 2020 and evaluated the number of cases with respect to the deaths, recovery, and the confirmed cases.  
@@ -20,9 +20,9 @@ My transformation steps I needed to clean the data to be readable, presentable, 
   * Found a way of finding the daily increase with respect to each table.  This value was converted from a float to an integer
 
 * LOADING STEPS
-  * I established a connection to a local MYSQL server in our desktop to store the data
+  * I established a connection to a local MySQL server in our desktop to store the data
   * I have a schema that creates the tables, and we can confirm it using cursor.execute("SHOW TABLES").
-  * I pushed the Pandas DataFrame to the local MYSQL server so I can retrieve and query the data in our Jupyter Notebook
+  * I pushed the Pandas DataFrame to the local MySQL server so I can retrieve and query the data in our Jupyter Notebook
 
 * Analysis / SQL Queries
 In this part, I want to find:
